@@ -1,0 +1,11 @@
+**/*.suo
+**/*.user
+**/.vs
+**/.project
+**/node_modules
+**/typings
+**/dist
+**/testResult
+**/TestResults
+**/bin
+**/obj
