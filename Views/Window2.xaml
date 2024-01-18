@@ -3,10 +3,34 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfTestBox.Views"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"  
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}" Topmost="False"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
         mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800">
+        Title="Window with material" Height="450" Width="800">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <materialDesign:BundledTheme BaseTheme="Light" PrimaryColor="Blue" SecondaryColor="Lime"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
     <Grid>
-        
+        <TextBlock Text="This is the second window." HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <!-- Example label with Material Design styles -->
+        <Label Content="Material Design Label" VerticalAlignment="Top" Margin="10" />
+
+        <!-- Example button with Material Design styles -->
+        <Button Content="Material Design Button" VerticalAlignment="Bottom" Margin="10"/>
     </Grid>
 </Window>
+
+
