@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel>
+            <Button Content="plain ui elements" Click="OpenWindow1_Click"></Button>
+            <Button Content="material design elements" Click="OpenWindow2_Click"></Button>
+        </StackPanel>
     </Grid>
 </Window>

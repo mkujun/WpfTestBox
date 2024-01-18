@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfTestBox.Views;
 
 namespace WpfTestBox
 {
@@ -23,6 +24,18 @@ namespace WpfTestBox
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void OpenWindow1_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            window1.Show();
+        }
+
+        private void OpenWindow2_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            window2.Show();
         }
     }
 }
