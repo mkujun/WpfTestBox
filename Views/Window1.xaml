@@ -8,10 +8,10 @@
     <Grid>
         <TextBlock Text="This is the first window." HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <!-- Example label with Material Design styles -->
-        <Label Content="Material Design Label" VerticalAlignment="Top" Margin="10" />
+        <!-- Example label without external stylin-->
+        <Label Content="Label" VerticalAlignment="Top" Margin="10" />
 
-        <!-- Example button with Material Design styles -->
-        <Button Content="Material Design Button" VerticalAlignment="Bottom" Margin="10"/>
+        <!-- Example label without external stylin-->
+        <Button Content="Button" VerticalAlignment="Bottom" Margin="10"/>
     </Grid>
 </Window>
