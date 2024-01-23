@@ -10,6 +10,8 @@
         <StackPanel>
             <Button Content="plain ui elements" Click="OpenWindow1_Click"></Button>
             <Button Content="material design elements" Click="OpenWindow2_Click"></Button>
+            <Button Content="design system dictionary" Click="OpenWindow3_Click"></Button>
+            <Button Content="resource dictionary" Click="OpenWindow4_Click"></Button>
         </StackPanel>
     </Grid>
 </Window>
